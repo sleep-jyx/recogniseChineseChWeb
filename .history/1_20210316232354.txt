@@ -1,5 +1,0 @@
-checkpoint = {"model_state_dict": '1',  # 神经网络权重状态字典
-                              "optimizer_state_dict": '2',  # 优化器状态字典
-                              "epoch": '3'
-                              "loss": '4'
-                              }

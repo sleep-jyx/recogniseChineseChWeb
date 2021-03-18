@@ -1,3 +1,0 @@
-dataiter = iter(train_loader) 报错时：
-放在主函数中
-if __name__ == '__main__':
