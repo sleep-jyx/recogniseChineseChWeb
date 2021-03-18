@@ -1,0 +1,25 @@
+1、Pillow，调用本机图片浏览工具
+from PIL import Image
+
+img=Image.open('girl.jpg')
+img.show()
+
+2、matplotlib，和matlab几乎一样
+import matplotlib.pyplot as plt
+im = plt.imread('girl.jpg')
+plt.imshow(im)
+plt.show()
+
+3、opencv
+import cv2
+
+img = cv2.imread('girl.jpg')
+cv2.imshow('美女', img)
+cv2.waitKey(0)
+
+
+用torchversion显示图，显示图片时调用本机图片浏览工具，看来是第一种方式
+# Open Image from dataset:
+my_img, _ = train_data[248]
+results = transforms.ToPILImage()(my_img)
+results.show()

@@ -1,0 +1,12 @@
+dataloader数据加载器
+trainset = tv.datasets.CIFAR10(
+                    root="E:\knowledgeTips\python\pytorch", 
+                    train=True, 
+                    download=True,
+                    transform=transform)
+
+trainloader = t.utils.data.DataLoader(
+                    trainset, 
+                    batch_size=4,
+                    shuffle=True, 
+                    num_workers=2)
